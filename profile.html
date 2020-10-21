@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>American Experience</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="about.html"> About </a></li>
+			<li><a href="gallery.html"> Gallery </a></li>
+            <li><a href="kontakt.php"> Contact </a></li>
+            <li><a href="profile.html"> Profile </a></li>
+		</ul>
+    </div>
+
+<div class="contact-form">
+    <form name="myForm">
+        <input type="text" onfocus="this.value=''" placeholder="Name" id="name">
+        <input type="text" onfocus="this.value=''" placeholder="Lastname" id="lastname">
+        <input type="email" onfocus="this.value=''" placeholder="E-mail" id="email">
+        <input type="password" onfocus="this.value=''" placeholder="Password" id="password">
+    </form>
+</div>
+
+    <input type="submit" value="Submit" onclick="submit()"> <br>
+    <input type="submit" value="Show Profiles" onclick="showProfiles()"> <br>
+
+    <div id = "profiles">
+
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+body{
+	margin:0px;
+	background-image: url("background.jpg");
+	backdrop-filter: blur(5px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black; 
+
+}
+
+.menu{
+	width:100%;
+	height:80px;
+	display:block;
+}
+
+ul{
+	text-align: center;
+	list-style:none;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	width:40%;
+	border-bottom:4px solid white;
+	border-radius:10px;
+	padding: 20px;
+	line-height: 0px;
+
+}
+
+li{
+	line-height: 0px;
+	padding:5px 20px 5px 20px;
+	display:inline;
+	font-size:17px;
+}
+
+li:hover{
+	background-color:black;
+	opacity:0.7;
+	transition: 0.5s;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-radius:10px;
+}
+
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+	text-decoration: none;
+}
+
+.travel{
+
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+	width:100%;
+
+}
+
+.newyork-side{
+	display:inline;
+	float:left;
+	width:48%;
+	margin-top:20px;
+	background-color:black;
+	opacity:0.9;
+	border-radius:20px;
+
+}
+
+#showMore1{
+	display: none;
+}
+
+
+img{
+	width:49%;
+	height:300px;
+	border-radius:10px;
+}
+
+.philly{
+	margin-top:20px;
+	float:right;
+	width:50%;
+	background-color:black;
+	opacity:0.9;
+	border-radius:20px;
+
+}
+
+#showMore2{
+	display: none;
+}
+
+h2{
+	text-align:center;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial;
+	border:2px solid white;
+	color:white;
+	width:50%;
+}
+h2:hover{
+	opacity:0.5;
+}
+
+p{
+	font-family: Arial;
+	color:white;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+input[type=submit]{
+	padding:10px;
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:30%;
+	border:4px solid orange;
+	letter-spacing: 2px;
+	border-radius:25px;
+	font-family: Arial;
+	font-weight:bold;
+}
+
+input[type=submit]:hover{
+	background-color:black;
+	color:white;
+}
+
+.about-us{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width:95%;
+	margin-top:20px;
+	background-color:black;
+	opacity:0.9;
+	border-radius:20px;
+	height:500px;
+
+}
+
+.slideshow-container{
+	width: 100%;
+	position:relative;
+	text-align: center;
+}
+
+.mySlides{
+	display: none;
+}
+
+
+
+.people{
+	width:450px;
+	height: 250px;
+	padding-left: 10px;
+	padding-top: 10px;
+	border-radius: 20px;
+	float:left;
+	transform: scale(1);
+}
+
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin:0 2px;
+	background-color: #bbbbbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+	background-color: #717171;
+}
+
+.about-text{
+	float:right;
+	width:56%;
+	margin:10px;
+	text-align:justify;
+}
+
+
+.bus{
+	width:120px;
+	height: 120px;
+	animation: anim 30s infinite;
+	position: relative;
+}
+
+@keyframes anim{
+	0%{left:0px;}
+
+	50%{left:425px;}
+
+	100%{left:0px;}
+}
+
+
+.galerija{
+	width:95%;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: black;
+	opacity: 0.9;
+	border-radius: 20px;
+	text-align: center;
+	
+}
+
+ .galerija-fotke{
+
+	width: 500px;
+	height:500px;
+	padding-left: auto;
+	padding-right: auto;
+	margin: 3%;
+	border-radius: 20px;
+}
+
+.galerija-fotke:hover{
+	transform: scale(1.2);
+	transition:0.5s ease;
+}
+
+.forma{
+	text-align:center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width:90%;
+	background-color: black;
+	opacity: 0.8;
+	height:600px;
+	border:2px solid black;
+	border-radius: 20px;
+}
+
+.contact-text{
+	padding:20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+}
+
+input[type=text], input[type=email], input[type= password]{
+	font-size:20px;
+	border:4px solid orange;
+	border-radius: 20px;
+	background-color: white;
+	margin:20px;
+	text-align: center;
+	width:40%;
+	display:inline;
+	padding:20px;
+}
+
+textarea{
+	border-radius: 20px;
+	border:4px solid orange;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:70%;
+	height:150px;
+	background-color: white;
+	font-size:20px;
+}
+
+@media screen and (max-width:768px){
+	ul{
+		width:100%;
+	}
+	.forma{
+		height:1000px;
+	}
+
+	.people{
+		width:95%;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	.bus{
+		display:none;
+	}
+
+	.about-text{
+		display: block;
+		width:95%;
+		text-align: justify;
+	}
+
+	.about-us{
+		height:1000px;
+	}
+}
+
+.contact-form{
+	text-align: center;
+}
+
+.profile, .noprofiles{
+	border: 4px solid orange;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius:20px;
+	background-color: white;
+	height: 110px;
+
+
+}
+
+.JStxt, .div2{
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 50;
+	text-align: center;
+	color: black;
+
+}
+
